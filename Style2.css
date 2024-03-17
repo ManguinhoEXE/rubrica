@@ -75,3 +75,18 @@ a :hover{
     float: right;
     margin-left: 200px;
 }
+
+.sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.sponsor {
+    margin-top: 150px;
+}
+
+.sponsor img {
+    width: 180px;
+}
+
