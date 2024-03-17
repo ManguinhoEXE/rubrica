@@ -1,0 +1,77 @@
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-align: left;
+    margin: 0;
+    margin-left: 180px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; 
+    margin-right: 180px; 
+}
+
+li {
+    margin: 0 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a :hover{
+    color: #666;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    float: right;
+}
+
+.eslogan {
+    font-size: 45px;
+    text-align: left;
+    margin-right: 200px;
+    font-weight: bold;
+}
+
+.text p {
+    text-align: left;
+    margin-right: 200px;
+    margin: 0;
+    margin-top: 25px;
+}
+
+.boton {
+    display: inline-block;
+  padding: 7px 20px;
+  border: 1px solid #73B2D9;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #73B2D9;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 26px;
+}
+
+.logo1 {
+    float: right;
+    margin-left: 200px;
+}
