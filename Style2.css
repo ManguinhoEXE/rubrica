@@ -1,92 +1,288 @@
+body {
+  background-color: #8EADD5;
+  font-family: 'Inter';
+  margin: 0;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 15vh;
+}
+
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.logo {
-    text-align: left;
-    margin: 0;
-    margin-left: 180px;
+.header-title {
+  text-align: left;
+  margin: 0;
+  margin-left: 10%;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end; 
-    margin-right: 180px; 
+.header-title h1 {
+  color: #272D38;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.nav-menu {
+  list-style: none;
+  width: fit-content;
+  padding: 0;
+  display: flex;
+
 }
 
 li {
-    margin: 0 18px;
+  margin-inline: 2vw;
 }
 
 a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #272D38;
+  font-size: 1.2rem;
 }
 
-a :hover{
-    color: #666;
+.side-menu{
+  display: none;
 }
 
-.home {
-    display: flex;
+.section {
+  display: flex;
+  width: 100%;
+  height: 85vh;
+  padding-bottom: 20vh;
+  margin: 0;
+}
+
+.text {
+  display: flex;
+  margin-left: 15vw;
+  width: 45vw;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+}
+
+.imagen {
+  display: flex;
+  width: 40vw;
+}
+
+.text-style1 {
+  color: #272D38;
+  text-align: left;
+}
+
+.text-style2 {
+  color: #272D38;
+  margin-block: 5%;
+  line-height: 1.6rem;
+}
+
+.text-style3 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+  color: #272D38;
+  text-align: left;
+}
+
+.text-style4 {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  margin-top: 10%;
+}
+
+.main-text-1 {
+  font-size: 3.5rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px #3C4556;
+  line-height: 3.2rem;
+  font-weight: 900;
+}
+
+.companies {
+  height: fit-content;
+  display: flex;
+  padding-bottom: 20vh;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.companies-text {
+  font-family: 'Inter';
+  font-size: 1rem;
+  font-weight: 200;
+  color: white;
+}
+
+.logos {
+  display: flex;
+  padding-block: 1.5rem;
+}
+
+.img-2,
+.img-4 {
+  display: flex;
+  margin-left: 10vw;
+  width: 40vw;
+  height: 100%;
+}
+
+.text-BD,
+.text-BP {
+  margin-left: 10vw;
+  width: 40vw;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-inline: 10%;
+  gap: 10%;
+  width: 80%;
+  height: 40vh;
+  margin: 0;
+  padding-bottom: 10vh;
+}
+
+.column {
+  display: flex;
+  font-weight: 300;
+  width: fit-content;
+  gap: 4vh;
+  flex-direction: column;
+}
+
+.column :first-child {
+  font-weight: bold;
+}
+
+.hamburger-btn{
+  display: none;
+}
+
+/* vista mobile */
+
+@media (max-width:700px) {
+  html {
+    font-size: 11px;
+  }
+
+  header {
+    height: 10vh;
+  }
+
+  .header-title {
+    margin-left: 10vw;
+  }
+
+  .section {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    height: fit-content;
+  }
+
+  .text {
     margin: 0;
-    margin-top: 100px;
-}
+    width: 100%;
+    align-items: center;
+  }
 
-.container {
-    display: flex;
-    float: right;
-}
+  .main-text-1 {
+    text-shadow: none;
+  }
 
-.eslogan {
-    font-size: 45px;
-    text-align: left;
-    margin-right: 200px;
+  .Branding-Design, .Be-Part{
+    flex-direction: column-reverse;
+  }
+
+
+  .text-BD{
+    width: 100%;
+    height: fit-content;
+  }
+
+  .text-CP{
+    height: fit-content;
+  }
+
+  .text-style4 {
+    text-align: center;
+    font-weight: 300;
+    width: fit-content;
+    padding: 7px 20px;
+    border: 1px solid #272D38;
+    border-radius: 5px;
+    background-color: #272D38;
+    margin-top: 0;
+  }
+
+  .text-style3{
+    text-align: center;
+  }
+
+  .text-style1 {
+    text-align: center;
     font-weight: bold;
-}
 
-.text p {
-    text-align: left;
-    margin-right: 200px;
-    margin: 0;
-    margin-top: 25px;
-}
+  }
 
-.boton {
-    display: inline-block;
-  padding: 7px 20px;
-  border: 1px solid #73B2D9;
-  border-radius: 5px;
-  text-decoration: none;
-  background-color: #73B2D9;
-    text-decoration: none;
-    color: #fff;
-    margin-top: 26px;
-}
+  .text-style2{
+    text-align: center;
+    font-weight: 500;
+  }
 
-.logo1 {
-    float: right;
-    margin-left: 200px;
-}
+  .nav-menu {
+    display: none;
+  }
 
-.sponsors {
+  .hamburger-btn {
     display: flex;
-    justify-content: center;
-    align-items: center;;
-}
+    background: none;
+    border-style: none;
+    padding-right: 5vw;
+    width: 15vw;
+  }
 
-.sponsor {
-    margin-top: 150px;
-}
+  .imagen{
+    margin-top: 2vh;
+    width: 100vw;
+  }
 
-.sponsor img {
-    width: 180px;
-}
+  .logos{
+    padding-inline: 2rem;
+  }
 
+  footer{
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+
+  .column{
+    padding-bottom: 5vh;
+    width: 100%;
+    text-align: center;
+  }
+
+}
